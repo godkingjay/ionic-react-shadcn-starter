@@ -1,0 +1,7 @@
+{
+  "name": "ionic-react-shadcn",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
