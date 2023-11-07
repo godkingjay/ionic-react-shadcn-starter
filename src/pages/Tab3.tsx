@@ -1,6 +1,7 @@
 import {
 	IonContent,
 	IonHeader,
+	IonIcon,
 	IonPage,
 	IonTitle,
 	IonToolbar,
@@ -14,7 +15,7 @@ import {
 	CardDescription,
 	CardContent,
 } from "@/components/ui/card";
-import { BsGithub } from "react-icons/bs";
+import { logoGithub } from "ionicons/icons";
 
 const Tab3: React.FC = () => {
 	return (
@@ -42,7 +43,10 @@ const Tab3: React.FC = () => {
 								target="_blank"
 							>
 								<Button className="w-full flex gap-2">
-									<BsGithub className="aspect-square h-[16px] w-[16px]" />
+									<IonIcon
+										icon={logoGithub}
+										className="aspect-square h-[20px] w-[20px]"
+									/>
 									<span>Github</span>
 								</Button>
 							</a>
