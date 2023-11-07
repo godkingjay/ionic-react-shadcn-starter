@@ -5,8 +5,16 @@ import {
 	IonTitle,
 	IonToolbar,
 } from "@ionic/react";
-import ExploreContainer from "../components/ExploreContainer";
 import "./Tab2.scss";
+import { Button } from "@/components/ui/button";
+import {
+	Card,
+	CardHeader,
+	CardTitle,
+	CardDescription,
+	CardContent,
+} from "@/components/ui/card";
+import { BsGithub } from "react-icons/bs";
 
 const Tab2: React.FC = () => {
 	return (
@@ -22,7 +30,25 @@ const Tab2: React.FC = () => {
 						<IonTitle size="large">Tab 2</IonTitle>
 					</IonToolbar>
 				</IonHeader>
-				<ExploreContainer name="Tab 2 page" />
+				<div className="p-4">
+					<Card className="min-w-[320px]">
+						<CardHeader className="text-center">
+							<CardTitle>Tab 2</CardTitle>
+							<CardDescription>Tab 2</CardDescription>
+						</CardHeader>
+						<CardContent className="flex flex-col gap-2">
+							<a
+								href="https://github.com/godkingjay/ionic-react-shadcn"
+								target="_blank"
+							>
+								<Button className="w-full flex gap-2">
+									<BsGithub className="aspect-square h-[16px] w-[16px]" />
+									<span>Github</span>
+								</Button>
+							</a>
+						</CardContent>
+					</Card>
+				</div>
 			</IonContent>
 		</IonPage>
 	);
